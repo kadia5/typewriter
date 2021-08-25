@@ -48,6 +48,9 @@ for (const char of sentence) {
   setTimeout(() => {
     process.stdout.write(sentence.charAt(11));
   }, 550) 
+  setTimeout(() => {
+    process.stdout.write('\n');
+  }, 550) 
   
   break
   
@@ -75,4 +78,21 @@ for (const char of sentence) {
 //     }, 30 * index)
 //   });
  
+// async function typeSentence(sentence, eleRef, delay = 100) {
+//   const letters = sentence.split("");
+//   let i = 0;
+//   while(i < letters.length) {
+//     await waitForMs(delay);
+//     $(eleRef).append(letters[i]);
+//     i++
+//   }
+//   return;
+// }
+
+
+// function waitForMs(ms) {
+//   return new Promise(resolve => setTimeout(resolve, ms))
+// }
+
+// typeSentence("hello there from lighthouse labs")
 
